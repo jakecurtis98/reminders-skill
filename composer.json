@@ -1,0 +1,8 @@
+{
+    "require": {
+        "maxbeckers/amazon-alexa-php": "^1.7",
+      "ext-json": "*",
+      "ext-mysqli": "*",
+      "ext-curl": "*"
+    }
+}

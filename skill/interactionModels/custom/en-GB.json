@@ -1,0 +1,452 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "pill reminder",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "reminderTime",
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "remind me at {time}",
+            "Set reminder for {time}",
+            "{time}"
+          ]
+        },
+        {
+          "name": "reminderFrequency",
+          "slots": [
+            {
+              "name": "frequency",
+              "type": "frequency"
+            }
+          ],
+          "samples": [
+            "remind me {frequency}",
+            "{frequency}"
+          ]
+        },
+        {
+          "name": "reminderTitle",
+          "slots": [
+            {
+              "name": "title",
+              "type": "title"
+            }
+          ],
+          "samples": [
+            "call it {title}",
+            "have {title}",
+            "take {title}",
+            "have my {title}",
+            "take my {title}",
+            "{title}"
+          ]
+        },
+        {
+          "name": "reminderName",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "the reminder is for {name}",
+            "this is for {name}",
+            "its for {name}",
+            "{name}"
+          ]
+        },
+        {
+          "name": "createReminder",
+          "slots": [],
+          "samples": [
+            "make new",
+            "make new one",
+            "create new one",
+            "create new",
+            "new one",
+            "create reminder",
+            "new reminder",
+            "make a new reminder",
+            "create a new reminder",
+            "create a reminder"
+          ]
+        },
+        {
+          "name": "showExisting",
+          "slots": [],
+          "samples": [
+            "tell me my exisitng reminders",
+            "existing reminders",
+            "existing reminder",
+            "hear existing reminders",
+            "hear existing reminder",
+            "hear existing one",
+            "existing",
+            "existing ones",
+            "hear existing",
+            "hear existing ones"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "monthly",
+                "synonyms": [
+                  "every month",
+                  "once a month"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "weekly",
+                "synonyms": [
+                  "every week",
+                  "once a week"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Daily",
+                "synonyms": [
+                  "every day",
+                  "once a day"
+                ]
+              }
+            }
+          ],
+          "name": "frequency"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "drug"
+              }
+            },
+            {
+              "name": {
+                "value": "antipsychotic"
+              }
+            },
+            {
+              "name": {
+                "value": "haloperidol"
+              }
+            },
+            {
+              "name": {
+                "value": "tricyclic antidepressants"
+              }
+            },
+            {
+              "name": {
+                "value": "olanzapine"
+              }
+            },
+            {
+              "name": {
+                "value": "zolpidem"
+              }
+            },
+            {
+              "name": {
+                "value": "gabapentin"
+              }
+            },
+            {
+              "name": {
+                "value": "alprazolam"
+              }
+            },
+            {
+              "name": {
+                "value": "antidepressant"
+              }
+            },
+            {
+              "name": {
+                "value": "benzodiazepine"
+              }
+            },
+            {
+              "name": {
+                "value": "buprenorphine"
+              }
+            },
+            {
+              "name": {
+                "value": "fluoxetine"
+              }
+            },
+            {
+              "name": {
+                "value": "topiramate"
+              }
+            },
+            {
+              "name": {
+                "value": "midazolam"
+              }
+            },
+            {
+              "name": {
+                "value": "anticonvulsants"
+              }
+            },
+            {
+              "name": {
+                "value": "anticonvulsant"
+              }
+            },
+            {
+              "name": {
+                "value": "muscle relaxant"
+              }
+            },
+            {
+              "name": {
+                "value": "anxiolytics"
+              }
+            },
+            {
+              "name": {
+                "value": "sedatives"
+              }
+            },
+            {
+              "name": {
+                "value": "opioids"
+              }
+            },
+            {
+              "name": {
+                "value": "diazepam"
+              }
+            },
+            {
+              "name": {
+                "value": "pain medication"
+              }
+            },
+            {
+              "name": {
+                "value": "acetaminophen"
+              }
+            },
+            {
+              "name": {
+                "value": "antidepressants"
+              }
+            },
+            {
+              "name": {
+                "value": "chlordiazepoxide"
+              }
+            },
+            {
+              "name": {
+                "value": "diphenhydramine"
+              }
+            },
+            {
+              "name": {
+                "value": "lorazepam"
+              }
+            },
+            {
+              "name": {
+                "value": "sedative"
+              }
+            },
+            {
+              "name": {
+                "value": "oxycodone"
+              }
+            },
+            {
+              "name": {
+                "value": "paracetamol"
+              }
+            },
+            {
+              "name": {
+                "value": "tranquilizers"
+              }
+            },
+            {
+              "name": {
+                "value": "depressants"
+              }
+            },
+            {
+              "name": {
+                "value": "painkillers"
+              }
+            },
+            {
+              "name": {
+                "value": "aspirin"
+              }
+            },
+            {
+              "name": {
+                "value": "prescription drugs"
+              }
+            },
+            {
+              "name": {
+                "value": "medications"
+              }
+            },
+            {
+              "name": {
+                "value": "prescription"
+              }
+            },
+            {
+              "name": {
+                "value": "medication"
+              }
+            },
+            {
+              "name": {
+                "value": "pills"
+              }
+            },
+            {
+              "name": {
+                "value": "tablets"
+              }
+            },
+            {
+              "name": {
+                "value": "pain killers"
+              }
+            },
+            {
+              "name": {
+                "value": "blue pills"
+              }
+            }
+          ],
+          "name": "title"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "reminderTime",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1123302382801"
+          },
+          "slots": [
+            {
+              "name": "time",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "reminderFrequency",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1425678130541"
+          },
+          "slots": [
+            {
+              "name": "frequency",
+              "type": "frequency",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.1123302382801",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "You want to set your reminder for {time} ?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1425678130541",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I heard {frequency} , is that correct?"
+          },
+          {
+            "type": "PlainText",
+            "value": "you want to be reminded {frequency} , is that correct?"
+          },
+          {
+            "type": "PlainText",
+            "value": "you want to be reminded {frequency} , correct?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "12"
+}

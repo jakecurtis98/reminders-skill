@@ -1,0 +1,77 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://remindersapp.jaketc.org.uk/botman"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      }
+    ],
+    "events": {
+      "endpoint": {
+        "sslCertificateType": "Trusted",
+        "uri": "https://remindersapp.jaketc.org.uk/botman"
+      },
+      "subscriptions": [
+        {
+          "eventName": "REMINDER_STARTED"
+        },
+        {
+          "eventName": "REMINDER_STATUS_CHANGED"
+        },
+        {
+          "eventName": "REMINDER_CREATED"
+        },
+        {
+          "eventName": "REMINDER_UPDATED"
+        },
+        {
+          "eventName": "SKILL_PERMISSION_CHANGED"
+        }
+      ]
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "locales": {
+        "en-GB": {
+          "privacyPolicyUrl": "https://remindersapp.jaketc.org.uk/privacy-policy",
+          "termsOfUseUrl": "https://remindersapp.jaketc.org.uk/terms"
+        }
+      },
+      "usesPersonalInfo": true
+    },
+    "publishingInformation": {
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "category": "HEALTH_AND_FITNESS",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-GB": {
+          "description": "Never forget to take you're pill again",
+          "examplePhrases": [
+            "Alexa open pill reminder"
+          ],
+          "keywords": [],
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3fb9/cf0e3bac081f475cb31d497a34266423/APP_ICON_LARGE?versionId=4_pQ1kuiYSoNRO8rS9dyMF0z1BsPvjaW&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201217T111639Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAWBV6LQ4QKQTYKJJO%2F20201217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=11be3be7cf550a31811a880e591145326dc6a8987f5f8c61c2405a279137a4cd",
+          "name": "Pill Reminder",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/dd4f/9558880513314aa7b96d49c3709e98d4/APP_ICON?versionId=orN_G8t.elzRuGsitndUXGqap6G0N8cJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201217T111639Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAWBV6LQ4QKQTYKJJO%2F20201217%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8ec8be4410a82b67da7ac8bf94833a4cedeb62694558a28922c40438197480dd",
+          "summary": "Never forget to take you're pills again"
+        }
+      },
+      "testingInstructions": "Sample Testing Instruction."
+    }
+  }
+}
